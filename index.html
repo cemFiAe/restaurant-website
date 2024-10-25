@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein Restaurant</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .atf-image {
+            width: 100%;
+            height: 800px;
+            object-fit: cover;
+        }
+
+        .myBody {
+            margin: 0px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .menu {
+            position: absolute;
+            position: fixed;
+            top: 15px;
+            right: 100px;
+        }
+
+        .menu a {
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            text-decoration: none;
+            margin-left: 30px;
+            filter: drop-shadow(3px 4px 5px black);
+        }
+
+        .menu a:hover {
+            color: gold;
+            
+        }
+
+        .orderButton {
+            background-color: gold; /* Green */
+            border: none;
+            color: rgb(3, 3, 3) !important;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        .orderButton:hover {
+            background-color: #e8c755;
+        }
+
+        .überschrift {
+            font-family: 'Caveat', cursive;
+            margin-top: 40px;
+            margin-bottom: 10px;
+
+        }
+
+        .main-container {
+           /* padding-left: 100px; */
+            background-color: rgba(0, 0, 0, 0);
+            position: absolute;
+            top: 300px;
+            left: 100px;
+            right: 200px;
+            color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 20px;
+            filter: drop-shadow(13px 14px 5px black);
+        }
+
+      .div2 {
+        padding-left: 100px;
+      }
+
+      .preisliste {
+        color: black;
+        
+      }
+
+      .preisliste:hover {
+        
+        color: gold;
+      }
+
+
+      .kontakt {
+        color: black;
+      }
+
+      .kontakt:hover {
+        color: gold;
+      }
+
+      .googleMaps {
+        height: 350px;
+        width: 90%;
+      }
+
+      .footer {
+        color: white;
+        background-color: rgb(32, 32, 32);
+        padding: 100px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .footer-link {
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .footer-link:hover {
+        text-decoration: underline;
+        color: gold;
+      }
+
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./agb.html">
+
+</head>
+<body class="myBody">
+   <img class="atf-image" src="./img/aot.jpg" alt="aot">
+
+    <div class="menu">
+         <a href="#contact">Kontakt</a>
+         <a class="orderButton" href="">Online bestellen</a>
+        <a href="">Reservieren</a>
+        <a href="#address">Anfahrt</a>
+    </div>
+
+   <div class="main-container">
+    <h1>Herzlich Willkommen bei Pizzeria Alte Forno</h1>
+    <h4>Hier findest du einen Überblick über unsere Preise und weitere Infos</h4>
+    </div>    
+
+    
+   
+
+    <h2 class="überschrift">Unsere Öffnungszeiten: </h2>
+    <table>
+        <tr>
+            <td>Mo - Fr: </td>
+            <td>10:00 - 20:00 Uhr</td>
+        </tr>
+        <tr>
+            <td>Samstag: </td>
+            <td>10:00 - 20:00 Uhr</td>
+        </tr>
+        <tr>
+            <td>Sonntag: </td>
+            <td>geschlossen</td>
+        </tr>
+    </table>
+
+    <h2 class="überschrift">Tageskarte</h2>
+
+    <table>
+        <tr>
+            <td>Pizza Hawaii: 12,00€</td>
+        </tr>
+        <tr>
+            <td>Rigatoni Pollo: 8,90€</td>
+        </tr>
+        <tr>
+            <td>Lasagne Bolognese: 9,90€</td>
+        </tr>
+    </table>
+
+    <p>Hier die Preisliste <a class="preisliste" href="./downloads/preisliste.pdf" target="_blank">herunterladen</a>.</p>
+   
+    <h2 class="überschrift" id="contact">Kontakt</h2>
+
+    <p>Telefon: <a class="kontakt" href="tel:030 2759544">030 27595441</a></p>
+    <p>E-Mail: <a class="kontakt" href="mailto:pizzeria@gmx.com">pizzeria@gmx.com</a></p>
+    
+
+    <h2 class="überschrift" id="address">Anfahrt</h2>
+    <p>Unsere Adresse lautet: Tempelhofer Damm 138, 12099 Berlin</p>
+    <iframe class="googleMaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2430.671250900259!2d13.385186200000001!3d52.466981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84f3d507646a9%3A0x85a8800f0aacc8a6!2sPizzeria%20Alte%20Forno!5e0!3m2!1sde!2sde!4v1705613139125!5m2!1sde!2sde" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="3aa5aa7f-fb6b-4229-9e52-3740998a95fa" data-blockingmode="auto" type="text/javascript"></script>
+
+</div>
+</body>
+<footer class="footer">
+    <div>
+    <p>(c) Copyright 2023 House of Fade </div>
+        <div>
+        <a class="footer-link" href="impressum.html">Impressum</a>
+        <a class="footer-link" href="datenschutz.html">Datenschutz</a></p>
+    </div>
+
+</footer>
+
+</html>
